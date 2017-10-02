@@ -12,10 +12,11 @@
 		7C25F03B1F80FC7B00EAD10B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C25F0391F80FC7B00EAD10B /* Main.storyboard */; };
 		7C25F03D1F80FC7B00EAD10B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C25F03C1F80FC7B00EAD10B /* Assets.xcassets */; };
 		7C25F0401F80FC7B00EAD10B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C25F03E1F80FC7B00EAD10B /* LaunchScreen.storyboard */; };
-		7C25F04C1F80FF5500EAD10B /* GettyImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C25F04B1F80FF5500EAD10B /* GettyImage.swift */; };
-		7C25F0521F812AC300EAD10B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C25F0511F812AC300EAD10B /* SearchViewController.swift */; };
-		7C25F0561F812DBE00EAD10B /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C25F0551F812DBE00EAD10B /* TextField.swift */; };
-		7C25F05D1F8142A500EAD10B /* String + Ext..swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C25F05C1F8142A500EAD10B /* String + Ext..swift */; };
+		7C3F38451F83005500956242 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3F38441F83005500956242 /* SearchViewController.swift */; };
+		7C3F38471F83006D00956242 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3F38461F83006D00956242 /* TextField.swift */; };
+		7C3F38491F83007900956242 /* String + Ext..swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3F38481F83007900956242 /* String + Ext..swift */; };
+		7C3F384B1F83008700956242 /* GettyImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3F384A1F83008700956242 /* GettyImage.swift */; };
+		7C3F38511F83014400956242 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7C3F38501F83014400956242 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,11 +25,11 @@
 		7C25F03A1F80FC7B00EAD10B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7C25F03C1F80FC7B00EAD10B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C25F03F1F80FC7B00EAD10B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7C25F0411F80FC7B00EAD10B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7C25F04B1F80FF5500EAD10B /* GettyImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GettyImage.swift; sourceTree = "<group>"; };
-		7C25F0511F812AC300EAD10B /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		7C25F0551F812DBE00EAD10B /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
-		7C25F05C1F8142A500EAD10B /* String + Ext..swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String + Ext..swift"; sourceTree = "<group>"; };
+		7C3F38441F83005500956242 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = Controllers/SearchViewController.swift; sourceTree = "<group>"; };
+		7C3F38461F83006D00956242 /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextField.swift; path = View/TextField.swift; sourceTree = "<group>"; };
+		7C3F38481F83007900956242 /* String + Ext..swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String + Ext..swift"; path = "Extentions/String + Ext..swift"; sourceTree = "<group>"; };
+		7C3F384A1F83008700956242 /* GettyImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GettyImage.swift; path = Model/GettyImage.swift; sourceTree = "<group>"; };
+		7C3F38501F83014400956242 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C8FEF00B3355D33A6DBA6471 /* Pods-Mova.io.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mova.io.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mova.io/Pods-Mova.io.release.xcconfig"; sourceTree = "<group>"; };
 		D0498E0BDB84C5448D37E69C /* Pods-Mova.io.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mova.io.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mova.io/Pods-Mova.io.debug.xcconfig"; sourceTree = "<group>"; };
 		F7143E1292BFF9239FD68537 /* Pods_Mova_io.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mova_io.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,7 +83,7 @@
 			children = (
 				7C25F03C1F80FC7B00EAD10B /* Assets.xcassets */,
 				7C25F03E1F80FC7B00EAD10B /* LaunchScreen.storyboard */,
-				7C25F0411F80FC7B00EAD10B /* Info.plist */,
+				7C3F38501F83014400956242 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -90,7 +91,7 @@
 		7C25F0481F80FCFC00EAD10B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				7C25F04B1F80FF5500EAD10B /* GettyImage.swift */,
+				7C3F384A1F83008700956242 /* GettyImage.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -99,7 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				7C25F0391F80FC7B00EAD10B /* Main.storyboard */,
-				7C25F0551F812DBE00EAD10B /* TextField.swift */,
+				7C3F38461F83006D00956242 /* TextField.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -107,7 +108,7 @@
 		7C25F04A1F80FD1200EAD10B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				7C25F0511F812AC300EAD10B /* SearchViewController.swift */,
+				7C3F38441F83005500956242 /* SearchViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -115,7 +116,7 @@
 		7C25F05B1F81425D00EAD10B /* Extentions */ = {
 			isa = PBXGroup;
 			children = (
-				7C25F05C1F8142A500EAD10B /* String + Ext..swift */,
+				7C3F38481F83007900956242 /* String + Ext..swift */,
 			);
 			name = Extentions;
 			sourceTree = "<group>";
@@ -201,6 +202,7 @@
 			files = (
 				7C25F0401F80FC7B00EAD10B /* LaunchScreen.storyboard in Resources */,
 				7C25F03D1F80FC7B00EAD10B /* Assets.xcassets in Resources */,
+				7C3F38511F83014400956242 /* Info.plist in Resources */,
 				7C25F03B1F80FC7B00EAD10B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,11 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C25F05D1F8142A500EAD10B /* String + Ext..swift in Sources */,
+				7C3F38451F83005500956242 /* SearchViewController.swift in Sources */,
+				7C3F38491F83007900956242 /* String + Ext..swift in Sources */,
 				7C25F0361F80FC7B00EAD10B /* AppDelegate.swift in Sources */,
-				7C25F0521F812AC300EAD10B /* SearchViewController.swift in Sources */,
-				7C25F04C1F80FF5500EAD10B /* GettyImage.swift in Sources */,
-				7C25F0561F812DBE00EAD10B /* TextField.swift in Sources */,
+				7C3F38471F83006D00956242 /* TextField.swift in Sources */,
+				7C3F384B1F83008700956242 /* GettyImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
