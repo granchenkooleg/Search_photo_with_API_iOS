@@ -1,0 +1,6 @@
+framework module Pods_Mova_io {
+  umbrella header "Pods-Mova.io-umbrella.h"
+
+  export *
+  module * { export * }
+}
