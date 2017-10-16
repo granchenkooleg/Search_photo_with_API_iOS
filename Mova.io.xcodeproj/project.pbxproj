@@ -16,7 +16,7 @@
 		7C3F38471F83006D00956242 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3F38461F83006D00956242 /* TextField.swift */; };
 		7C3F38491F83007900956242 /* String + Ext..swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3F38481F83007900956242 /* String + Ext..swift */; };
 		7C3F384B1F83008700956242 /* GettyImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3F384A1F83008700956242 /* GettyImage.swift */; };
-		7C3F38511F83014400956242 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7C3F38501F83014400956242 /* Info.plist */; };
+		7C481F951F85766700240FE2 /* MovaTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C481F941F85766700240FE2 /* MovaTheme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +30,7 @@
 		7C3F38481F83007900956242 /* String + Ext..swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String + Ext..swift"; path = "Extentions/String + Ext..swift"; sourceTree = "<group>"; };
 		7C3F384A1F83008700956242 /* GettyImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GettyImage.swift; path = Model/GettyImage.swift; sourceTree = "<group>"; };
 		7C3F38501F83014400956242 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C481F941F85766700240FE2 /* MovaTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovaTheme.swift; sourceTree = "<group>"; };
 		C8FEF00B3355D33A6DBA6471 /* Pods-Mova.io.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mova.io.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mova.io/Pods-Mova.io.release.xcconfig"; sourceTree = "<group>"; };
 		D0498E0BDB84C5448D37E69C /* Pods-Mova.io.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mova.io.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mova.io/Pods-Mova.io.debug.xcconfig"; sourceTree = "<group>"; };
 		F7143E1292BFF9239FD68537 /* Pods_Mova_io.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mova_io.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +85,7 @@
 				7C25F03C1F80FC7B00EAD10B /* Assets.xcassets */,
 				7C25F03E1F80FC7B00EAD10B /* LaunchScreen.storyboard */,
 				7C3F38501F83014400956242 /* Info.plist */,
+				7C481F941F85766700240FE2 /* MovaTheme.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -202,7 +204,6 @@
 			files = (
 				7C25F0401F80FC7B00EAD10B /* LaunchScreen.storyboard in Resources */,
 				7C25F03D1F80FC7B00EAD10B /* Assets.xcassets in Resources */,
-				7C3F38511F83014400956242 /* Info.plist in Resources */,
 				7C25F03B1F80FC7B00EAD10B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C481F951F85766700240FE2 /* MovaTheme.swift in Sources */,
 				7C3F38451F83005500956242 /* SearchViewController.swift in Sources */,
 				7C3F38491F83007900956242 /* String + Ext..swift in Sources */,
 				7C25F0361F80FC7B00EAD10B /* AppDelegate.swift in Sources */,

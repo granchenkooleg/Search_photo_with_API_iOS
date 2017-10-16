@@ -20,7 +20,7 @@ class GettyImage : Object {
     
     dynamic var id = ""
     dynamic var title = ""
-    var display_sizes = List<Display_sizes>()
+    let display_sizes = List<Display_sizes>()
     
     @discardableResult static func setupGettyImage(json: JSON) -> GettyImage {
         var gettyImage = GettyImage()
