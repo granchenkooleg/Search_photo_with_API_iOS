@@ -22,9 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             window.rootViewController =  UINavigationController(rootViewController: SearchViewController()) 
             window.makeKeyAndVisible()
             
-            UISearchBar.appearance().barTintColor = .candyGreen
+            UISearchBar.appearance().barTintColor = .customGray
             UISearchBar.appearance().tintColor = .white
-            UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).tintColor = .candyGreen
+            UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).tintColor = .customGray
             return true
         }
         return true
