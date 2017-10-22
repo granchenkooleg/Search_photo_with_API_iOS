@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		064D933335BF5A801FCDB01D /* Pods_Mova_io.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7143E1292BFF9239FD68537 /* Pods_Mova_io.framework */; };
+		7C1903D91F9D2DF900AC348D /* UIImageExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1903D81F9D2DF900AC348D /* UIImageExt.swift */; };
 		7C25F0361F80FC7B00EAD10B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C25F0351F80FC7B00EAD10B /* AppDelegate.swift */; };
 		7C25F03B1F80FC7B00EAD10B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C25F0391F80FC7B00EAD10B /* Main.storyboard */; };
 		7C25F03D1F80FC7B00EAD10B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C25F03C1F80FC7B00EAD10B /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C1903D81F9D2DF900AC348D /* UIImageExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExt.swift; sourceTree = "<group>"; };
 		7C25F0321F80FC7B00EAD10B /* Mova.io.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mova.io.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C25F0351F80FC7B00EAD10B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C25F03A1F80FC7B00EAD10B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -72,7 +74,7 @@
 				7C25F0351F80FC7B00EAD10B /* AppDelegate.swift */,
 				7C25F0481F80FCFC00EAD10B /* Model */,
 				7C25F0491F80FD0600EAD10B /* View */,
-				7C25F04A1F80FD1200EAD10B /* Controllers */,
+				7C25F04A1F80FD1200EAD10B /* ViewController */,
 				7C25F05B1F81425D00EAD10B /* Extentions */,
 				7C25F0471F80FCD400EAD10B /* Supporting Files */,
 			);
@@ -107,18 +109,19 @@
 			name = View;
 			sourceTree = "<group>";
 		};
-		7C25F04A1F80FD1200EAD10B /* Controllers */ = {
+		7C25F04A1F80FD1200EAD10B /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
 				7C3F38441F83005500956242 /* SearchViewController.swift */,
 			);
-			name = Controllers;
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 		7C25F05B1F81425D00EAD10B /* Extentions */ = {
 			isa = PBXGroup;
 			children = (
 				7C3F38481F83007900956242 /* String + Ext..swift */,
+				7C1903D81F9D2DF900AC348D /* UIImageExt.swift */,
 			);
 			name = Extentions;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				7C3F38491F83007900956242 /* String + Ext..swift in Sources */,
 				7C25F0361F80FC7B00EAD10B /* AppDelegate.swift in Sources */,
 				7C3F38471F83006D00956242 /* TextField.swift in Sources */,
+				7C1903D91F9D2DF900AC348D /* UIImageExt.swift in Sources */,
 				7C3F384B1F83008700956242 /* GettyImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

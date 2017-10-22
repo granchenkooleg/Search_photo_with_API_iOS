@@ -44,20 +44,20 @@ class GettyImage : Object {
             print("FileURL of DataBase - \(url)")
         }
     }
-    
-    func allGettyImage() -> [GettyImage] {
-        let realm = try! Realm()
-        let list =  realm.objects(GettyImage.self)
-        return Array(list)
-    }
-    
-    static func delAllGettyImage() {
-        let realm = try! Realm()
-        let allGettyImage = realm.objects(GettyImage.self)
-        try! realm.write {
-            realm.delete(allGettyImage)
-        }
-    }
+ // These methods need for work without notification
+//    func allGettyImage() -> [GettyImage] {
+//        let realm = try! Realm()
+//        let list =  realm.objects(GettyImage.self)
+//        return Array(list)
+//    }
+//    
+//    static func delAllGettyImage() {
+//        let realm = try! Realm()
+//        let allGettyImage = realm.objects(GettyImage.self)
+//        try! realm.write {
+//            realm.delete(allGettyImage)
+//        }
+//    }
 }
 
 class Display_sizes : Object {
