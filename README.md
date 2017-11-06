@@ -3,4 +3,4 @@
 
 Search for a photo by entering the word, using the API. Saving search history. + Realm notification added
 
-![Alt text](https://github.com/granchenkooleg/Search_photo_with_API_iOS/blob/master/Mova.gif?raw=true "Search_photo_with_API")
+![Alt text](https://github.com/granchenkooleg/Search_photo_with_API_iOS/blob/master/SearchPhoto.gif?raw=true "Search_photo_with_API")
