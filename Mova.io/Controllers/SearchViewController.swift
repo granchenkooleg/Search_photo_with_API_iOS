@@ -66,7 +66,9 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
         
         tableView.separatorStyle = .singleLine
         
+        
         // MARK: -Notifications
+        
         token = gettyImageObj.addNotificationBlock {[weak self] (changes: RealmCollectionChange) in
             guard let tableView = self?.tableView else { return }
             
@@ -121,6 +123,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
     
     
     //MARK: UISearchBarDelegateMethod
+    
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar)  {
         if let text = searchBar.text {
             if text.isEmpty {
@@ -145,7 +148,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
                 let config = URLSessionConfiguration.default
                 config.httpAdditionalHeaders = [
                     "Accept": "application/json",
-                    "Api-Key": "pesprtpumxqpqzsv6q37kn8s"
+                    "Api-Key": "up9ar2m25p46cw88akprx7mx"
                 ]
                 
                 let session = URLSession(configuration: config)
@@ -192,6 +195,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
     
     
     // MARK: - Table view data source
+    
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return gettyImageObj.count
     }
@@ -225,7 +229,9 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
         return cell
     }
     
+    
     // MARK: -Delete rows [start
+    
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }
