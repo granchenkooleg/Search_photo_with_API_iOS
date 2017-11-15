@@ -40,7 +40,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
         // Call the path RealmDB
         GettyImage.setConfig()
         
-        // Create tableViewFrame
+        // MARK: -TableViewFrame
         self.tableView = UITableView(frame: (self.view.frame))
         
         tableView.delegate = self
@@ -132,8 +132,10 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
                 hud = MBProgressHUD.showAdded(to: self.view, animated: true)
                 hud.mode = .indeterminate
                 hud.label.text = "Loading"
+                
                 // Returns a new string made from the String by replacing all percent encoded sequences with the matching UTF-8 characters.
                 guard let text = text.removingPercentEncoding else { return  }
+                
                 // Set up the URL request
                 let todoEndpoint: String = "https://api.gettyimages.com/v3/search/images?fields=id,title,thumb&sort_order=best&phrase=\(text)"
                 
@@ -156,22 +158,27 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
                 // Make the request
                 let task = session.dataTask(with: urlRequest) { [weak self]
                     (data, response, error) in
+                    
                     // Check for any errors
                     guard error == nil else {
                         print("error calling GET on phrase: \(text)")
                         print(error as Any)
                         return
                     }
+                    
                     // Make sure we got data
                     guard let responseData = data else {
                         print("Error: did not receive data")
                         return
                     }
+                    
                     // Parse the result as JSON, since that's what the API provide
                     let todo = JSON(responseData)
+                    
                     // Set data in DB Realm
                     guard let _ = todo["images"].arrayValue.first.flatMap({ GettyImage.setupGettyImage(json: $0)
                     }) else {
+                        
                         // Warning if there is no photo
                         DispatchQueue.main.async {
                             let alert = UIAlertController(title: "Такой фотографии нет", message: "Попробуйте другое название", preferredStyle: UIAlertControllerStyle.alert)
@@ -219,6 +226,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
                     let image = UIImage(data: data)
                     DispatchQueue.main.async {
                         cell.imageView?.image = image/*.circleMask*/
+                        
                         // For appear the image without touch(resumption of arhitecture subviews)
                         cell.layoutSubviews()
                     }
