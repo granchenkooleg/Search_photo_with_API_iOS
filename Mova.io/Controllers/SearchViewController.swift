@@ -41,6 +41,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
         GettyImage.setConfig()
         
         // MARK: -TableViewFrame
+        
         self.tableView = UITableView(frame: (self.view.frame))
         
         tableView.delegate = self
@@ -99,6 +100,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
                                     let image = UIImage(data: data)
                                     DispatchQueue.main.async {
                                         cell.imageView?.image = image?.circleMask
+                                        
                                         // For appear the image without touch
                                         cell.layoutSubviews()
                                     }
@@ -127,7 +129,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar)  {
         if let text = searchBar.text {
             if text.isEmpty {
-//                imageContainer = GettyImage().allGettyImage()
+                //                imageContainer = GettyImage().allGettyImage()
             } else {
                 hud = MBProgressHUD.showAdded(to: self.view, animated: true)
                 hud.mode = .indeterminate
